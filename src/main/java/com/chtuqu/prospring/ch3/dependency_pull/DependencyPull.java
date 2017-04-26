@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class DependencyPull {
     public static void main(String[] args) {
-        ApplicationContext ctx = new ClassPathXmlApplicationContext("META-INF/spring/ch3/app-context.xml");
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("META-INF/spring/ch3/dependency_pull/app-context.xml");
 
         MessageRenderer mr = ctx.getBean("renderer", MessageRenderer.class);
         mr.render();
